@@ -8,6 +8,8 @@ namespace MikolHutnikLuckyNumbersProject
 {
     class Program
     {
+        private static string action;
+
         static void Main(string[] args)
         {
             do
@@ -23,7 +25,7 @@ namespace MikolHutnikLuckyNumbersProject
                 greetingTwo = "Please choose a ending number.";
                 int highNum;
 
-                string action;
+                
                
 
 
@@ -51,8 +53,9 @@ namespace MikolHutnikLuckyNumbersProject
 
                 //}
 
-                
+
                 //Creates Random numbers printed in correct format.
+                ;
                 int[] Random = new int[6];
                 Random r = new Random();
                 for (int i = 0; i < Random.Length; i++)
@@ -66,8 +69,10 @@ namespace MikolHutnikLuckyNumbersProject
                 action = Console.ReadLine();
             }
              
-             while (action != "yes");
-
+             while (action != "no");
+            {
+                Console.WriteLine("Thanks for playing!");
+            }
         }//Main
     }//Class
 }//Namespace
