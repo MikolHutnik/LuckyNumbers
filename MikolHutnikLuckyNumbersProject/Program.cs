@@ -25,6 +25,7 @@ namespace MikolHutnikLuckyNumbersProject
                 greetingTwo = "Please choose a ending number.";
                 int highNum;
 
+                int numCorrect;
                 
                
 
@@ -39,19 +40,20 @@ namespace MikolHutnikLuckyNumbersProject
 
                 //Supposed to request six numbers from user and make sure the are within chosen start and end numbers.
 
-                //Console.WriteLine("Please Choose 6 numbers within starting and ending numbers already chosen.");
-                //int[] chosenNum = new int[6];
-                //for (int x = 0; x < chosenNum.Length; x++)
-                //{
+                Console.WriteLine("Please Choose 6 numbers within starting and ending numbers already chosen.");
+                int[] chosenNum = new int[5];
+                for (int x = 0; x < chosenNum.Length; x++)
+                {
 
+                    // Supposed to check if numbers chosen are in range.
 
-                //    if (int.Parse(Console.ReadLine()) < lowNum || int.Parse(Console.ReadLine()) > highNum)
-                //    {
-                //        Console.WriteLine("Please input valid number");
+                    if (int.Parse(Console.ReadLine()) < lowNum || int.Parse(Console.ReadLine()) > highNum )
+                    {
+                        Console.WriteLine("Please input valid number");
 
-                //    }
+                    }
 
-                //}
+                }
 
 
                 //Creates Random numbers printed in correct format.
@@ -65,6 +67,9 @@ namespace MikolHutnikLuckyNumbersProject
                     Console.WriteLine("Lucky Number: {0}", Random[i]);
 
                 }
+
+                //Console.WriteLine("You guessed {0} correct.", numCorrect);
+                Console.WriteLine("You won ");
                 Console.WriteLine("Would you like to play again?");
                 action = Console.ReadLine();
             }
